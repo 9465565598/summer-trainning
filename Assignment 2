@@ -1,0 +1,22 @@
+###############            QUESTION 1							##################
+#Q1.  	Create a file that contains 1000 lines of random strings.   ##############
+
+fp=open('question1.txt','w')
+import random 
+import string
+print ("letters in string are from  --->",string.ascii_letters)
+iterations=1000
+for i in range(iterations):
+    a=random.sample(string.ascii_letters,10)
+    a="".join(a)
+    print(i,"",a)
+    fp.write(a + "\n")
+fp.close()
+print("writting done.....")
+
+
+
+###############################     QUESTION 2             ###############################
+#Q2.  	Create a file that contains multiple lines of random strings and file size must be 5 MB.
+
+
